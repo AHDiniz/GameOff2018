@@ -14,6 +14,7 @@ public class PlayerController2D : MonoBehaviour
 	{
 		rBody2D = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+		
 	}
 
 	private void Update()
