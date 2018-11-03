@@ -79,7 +79,7 @@
      <Compile Include="Assets\Models\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
      <Compile Include="Assets\Models\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
      <Compile Include="Assets\Models\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Math3d.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
+     <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
      <Compile Include="Assets\Sprites\2D ToonBear\Demo\Scripts\bearController.cs" />
      <None Include="Assets\Models\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Models\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -144,6 +144,9 @@
      <None Include="Assets\Models\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Models\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Models\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
@@ -153,20 +156,17 @@
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
  <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/Alan/Documents/UnityProjects/GameOff2018/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/2018.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
