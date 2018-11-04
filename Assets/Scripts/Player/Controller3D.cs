@@ -19,7 +19,7 @@ namespace GameOff2018
 				rBody = GetComponent<Rigidbody>();
 			}
 			
-			void Update()
+			void FixedUpdate()
 			{
 				ForwardMovement();
 				Rotation();
@@ -27,15 +27,15 @@ namespace GameOff2018
 
 			private void ForwardMovement()
 			{
-				float speed = (Input.GetButton("Fire3")) ? runSpeed : walkSpeed;
 				float input = Input.GetAxis("Vertical");
-				rBody.AddForce(new Vector3(0, 0, input * speed));
+				float speed = (Input.GetButton("Fire3")) ? runSpeed : walkSpeed;
+				rBody.AddRelativeForce(Vector3.forward * input * speed, ForceMode.Force);
 			}
 
 			private void Rotation()
 			{
 				float input = Input.GetAxis("Horizontal");
-				rBody.AddTorque(new Vector3(0, input * rotationSpeed, 0));
+				rBody.AddRelativeTorque(Vector3.up * rotationSpeed * input);
 			}
 		}
 	}
