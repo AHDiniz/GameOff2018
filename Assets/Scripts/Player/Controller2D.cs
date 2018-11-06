@@ -13,11 +13,13 @@ namespace GameOff2018
 
 			private Rigidbody2D rigidbody2D;
 			private SpriteRenderer spriteRenderer;
+			private Animator animator;
 
 			void Start()
 			{
 				rigidbody2D = GetComponent<Rigidbody2D>();
 				spriteRenderer = GetComponent<SpriteRenderer>();
+				animator = GetComponent<Animator>();
 			}
 			
 			void Update()
@@ -32,6 +34,8 @@ namespace GameOff2018
 				rigidbody2D.velocity = new Vector2(input * speed, rigidbody2D.velocity.y);
 				if (input > 0) spriteRenderer.flipX = false;
 				if (input < 0) spriteRenderer.flipX = true;
+
+				animator.SetBool("isWalking", input != 0);
 			}
 		}
 	}
